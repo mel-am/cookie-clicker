@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cookie Clicker</title>
+    
+  </head>
+  <body>
+    <div id="main-cookie">
+    <h1>Cookie Clicker</h1>
+    <p>Become the ultimate Cookie Collector!</p>
+   
+    <p><span id="cookiesSpan">0</span> Cookies</p>
+    <p>Cookies Per Second: <span id="cpsSpan">0</span></p> 
+  
+    </div>
+    <div class="container">
+        <div id="cookieHolder"> 
+        <button id ="cookieBtn"><img src="./img/cookie-3180329_1280.png" id="cookieBounce"></button>
+        </div>
+        
+      </div>
+       <div id="errorMessage">More cookies required</div>
+       <p id ="errorMessage"></p>
+        <table id="upgrade-list">
+        
+            <tr class="upgrade-item-header">
+                <th>Upgrade Item</th>
+                <th>Cost in cookies</th>
+                <th>Cookie Increase</th>
+                <th>Purchase</th>
+            </tr>
+            <tr class="upgrade-item">
+                <td>Rolling Pin</td>
+                <td>1</td>
+                <td id="rollingPinOwed"><span> </span>10</td>
+                <td><button id="upgradeRollingPinBtn"><span>Buy</span></button></td>
+            </tr>
+            <tr class="upgrade-item">
+                <td>Grandma</td>
+                <td>5</td>
+                <td><span id="grandmaOwed"></span>20</td>
+                <td><button id="upgradeGrandmaBtn"><span>Buy</span></button></td>
+            </tr>
+            <tr class="upgrade-item">
+                <td>Machine</td>
+                <td><span>30</div></td>
+                <td><span id="macine-owned">50</span></td>
+                <td><button id="upgradeMachineBtn"><span>Buy</span></button></td>
+            <tr class="upgrade-item">
+                <td>Store</td>
+                <td><span>40</span></div></td>
+                <td><span id="store-owned">70</span></td>
+                <td><button id="upgradeStoreBtn"><span>Buy</span></button></td>
+            <tr class="upgrade-item">
+                <td>Factory</td>
+                <td><span>100</span></div></td>
+                <td><span id="factory-owned">150</span></td>
+                <td><button id="upgradeFactoryBtn"><span>Buy</span></button></td>
+            </tr>
+
+            
+     <br>
+      <button id="resetButton">Reset</button>
+  </body>
+</html>

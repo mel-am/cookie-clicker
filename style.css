@@ -1,0 +1,193 @@
+body, html {
+    display: block;
+    position: relative;
+    height: 100vh;
+    margin:8px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.741)), url("./img/cookie-character.jpg");
+    z-index: -1;
+    ;
+}
+
+#main-cookie {
+
+    background-position: center;
+    height: 30vh;
+    color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: repeat-x;
+    justify-content:center;
+    align-items: center;
+    font-weight:bolder;
+    font-size: 26px;
+    opacity: 1.7;
+
+
+}
+
+table {
+    width:100%;
+    background: rgba(0, 0, 0, 0.162);
+}
+.upgrade-item-header{
+    display: flex;
+    align-items: left;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid black;
+    color: aliceblue;
+
+
+}
+.upgrade-list {
+    height: 30vh;
+    display: flex;  
+    align-items: left;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid black;
+    
+}
+
+.upgrade-item {
+    padding-top: 10px;
+    display: flex;
+    margin: 0 auto;
+    align-items: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    color: aliceblue;
+   }
+
+button{
+    
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+button > span::after {
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    border-radius: 50%;
+    right: -20px;
+    transition: 0.5s;
+    color: #555;
+    
+  }
+button:hover span{
+    padding-right: 25px;
+    background-color: aquamarine;
+    color: black;
+  }
+  
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+
+  }
+img{
+    height: 90vh;
+    width: 90vh;
+}
+#errorMessage{
+    display: none;
+}
+#cookieBtn {
+background-color: transparent;
+}
+#cookieBounce {
+   display: flex;
+   
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+  }
+  
+  #cookieBounce.bounce {
+    animation: bounceAnimation 0.5s ease; /* Apply bounce animation */
+  }
+  
+  @keyframes bounceAnimation {
+    0% {
+      transform: translateY(0); 
+    }
+    25% {
+      transform: translateY(-20px); 
+    }
+    50% {
+      transform: translateY(0); /
+    }
+    75% {
+      transform: translateY(-10px); 
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+Cookie
+.container {
+  position: relative;
+  width: 50%;
+}
+.container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .btn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
+
+
+ 
+
+#resetButton{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: aqua;
+    font-size: 20px;
+
+}
